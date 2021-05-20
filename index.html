@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <title>Scorer</title> 
+</head>
+<body>
+   <div class="container">
+       <div class="columns">
+           <div class="column is-half is-offset-one-quarter">
+            <div class="card">
+                <header class="card-header">
+                  <p class="card-header-title">
+                    Scorer using BULMA
+                  </p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                      <figure class="image is-16by9">
+                          <img src="https://images.unsplash.com/photo-1554073611-29a004c4074c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2NvcmVib2FyZHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
+                      </figure>
+                     <h1 class="title is-1"><span id="home-score">0</span> to <span id="away-score">0</span></h1>
+                     <p>playing to</p>
+                     <select name="" id="play-to" class="select is-primary">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                    </select>
+                  </div>
+                </div>
+                <footer class="card-footer">    
+                    <button id="add-home-score" class="is-primary button card-footer-item">+1 Home</button>
+                    <button id="add-away-score" class="is-link button card-footer-item">+1 Away</button> 
+                    <button id="reset-score" class="is-danger button card-footer-item">Reset</button>
+                </footer>
+              </div>
+           </div>
+       </div>
+   </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
